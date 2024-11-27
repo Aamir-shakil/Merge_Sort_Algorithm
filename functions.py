@@ -18,6 +18,13 @@ def merge(left, right): # merges the two sorted list into one ordered list
             sorted_array.append(left[x]) #adds smallest elemnt from the left list
             x += 1
         else:
-            sorted_array.append(left[y]) #adds smallest elemnt from the right list
+            sorted_array.append(right[y]) #adds smallest elemnt from the right list
             y += 1
+      
+    #appending any remaining element from the left and right list   
+    sorted_array.extend(left[x:])
+    
+    sorted_array.extend(right[y:])      
+            
+    
     return sorted_array
