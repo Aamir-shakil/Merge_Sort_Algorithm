@@ -5,4 +5,4 @@ large_dataset = [random.randint(0, 1000000) for _ in range(100000)] #generates 1
 # print(large_dataset)
 
 sorted_dataset = functions.merge_sort(large_dataset)
-print(sorted_dataset)
+print(sorted_dataset[:10]) #prints first 10 numbers of sorted array
